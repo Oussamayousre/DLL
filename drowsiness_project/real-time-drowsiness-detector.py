@@ -153,28 +153,25 @@ while True :
        
         if len(drowsy_array) > 10 : 
             
-            cv2.putText(frame, "Fi9 ", (10, 30),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
+           
             q = 1
         elif len(low_vigilant) > 10 :
               
-              cv2.putText(frame, "Fi9 asahbe", (10, 30),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
+              
               q = 1
         else :
               
-              cv2.putText(frame, "nadiii a3chiri", (10, 30),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
+             
               q = 0
         COUNTER = 0
         EAR = []
   #  cv2_imshow(frame)
     if q == 1 : 
-      cv2.putText(frame, "Fi9 asahbe", (10, 30),
+      cv2.putText(frame, "Wake up Dude", (10, 30),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
       cv2.imshow("Frame", frame)
     else : 
-       cv2.putText(frame, "nadiii a3chiri", (10, 30),
+       cv2.putText(frame, "Alert", (10, 30),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
        cv2.imshow("Frame", frame)                 
     key = cv2.waitKey(1) & 0xFF
